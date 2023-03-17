@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h1>{{ room.name }}</h1>
+
+<pre>{{ room.description }}</pre>
+
+<div class="image-container">
+    <img src="{{ url_for('static', filename='uploads/' + room.image) }}" alt="{{ room.name }} picture" width="900px">
+
+</div>
+
+{% if room.name in ["death", "The End"] %}
+    <p><a href="/">Play Again?</a></p>
+{% else %}
+    <p>
+        <form action="/game" method="POST">
+            <input type="text" name="action">
+            <input type="submit" value="Submit">
+        </form>
+    </p>
+{% endif %}
+
+{% endblock %}
+
+<style>
+  .image-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
+
+

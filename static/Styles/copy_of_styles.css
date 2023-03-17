@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(224, 55, 196);
+  }
+  
+  .description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .choices {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .error {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  input[type=text] {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: rgb(32, 178, 170);
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: rgb(70, 130, 180);
+  }
